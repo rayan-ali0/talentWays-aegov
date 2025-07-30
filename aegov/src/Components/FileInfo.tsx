@@ -11,7 +11,6 @@ export const FileInfo = () => {
 
             <section className=' flex flex-col gap-10 '>
                 <div className="flex flex-col sm:flex-row gap-5 sm:gap-3 justify-between border-b-[3px] border-[#f3f2f1] pb-5">
-                    {/* <div className="flex flex-row gap-3 justify-between border-b-[3px] border-[#f3f2f1] pb-5"> */}
                     <div className="flex flex-col gap-3 w-6/12">
                         <span className="font-bold">رقم الملف</span>
                         <span className="text-aegold-500">AJM-D01/2014/FI</span>
@@ -21,9 +20,6 @@ export const FileInfo = () => {
                         <span className="text-aegold-500">مدني</span>
                     </div>
                 </div>
-
-
-                {/* <div className="col-span-2 border-t-2 border-[#f3f2f1]  my-2" /> */}
 
                 <div className="flex flex-col sm:flex-row gap-5 sm:gap-3 justify-between border-b-[3px] border-[#f3f2f1] pb-5">
                     <div className="flex flex-col gap-3 w-6/12">

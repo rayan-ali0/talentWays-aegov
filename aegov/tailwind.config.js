@@ -8,7 +8,12 @@ export default {
     hoverOnlyWhenSupported: false,
   },
   theme: {
-    extend: {},
+    extend: {
+      screens:{
+        'xs':{'max':'440px'}
+      }
+    },
+
   },
   plugins: [
     require('@aegov/design-system'),

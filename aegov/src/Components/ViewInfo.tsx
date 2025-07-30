@@ -16,8 +16,6 @@ export const ViewInfo = ({ openSide }: ViewInfoProps) => {
                     <span><IoMdClose className="text-2xl" onClick={() => openSide(false)} /></span>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-5 sm:gap-3 justify-between border-b-[3px] border-[#f3f2f1] pb-6">
-
-                    {/* <div className="flex flex-row justify-between pb-6 border-b-[3px] border-[#f3f2f1]"> */}
                     <div className="flex flex-col w-full sm:w-6/12 h-full gap-4">
                         <span className="font-bold text-lg"> طبيعة الطرف</span>
                         <span className="text-aegold-500">شخص طبيعي</span>
@@ -67,8 +65,6 @@ export const ViewInfo = ({ openSide }: ViewInfoProps) => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-5 sm:gap-3 justify-start border-b-[3px] border-[#f3f2f1] pb-6  mb-6">
-
-                {/* <div className="flex flex-row justify-start pb-6 border-b-[3px] border-[#f3f2f1]"> */}
                     <div className="flex flex-col w-full sm:w-4/12 h-full gap-4  ">
                         <span className="font-bold text-lg"> مكان الاقامة </span>
                         <span className="text-aegold-500">  دبي </span>

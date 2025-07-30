@@ -46,7 +46,6 @@ export const Members = () => {
 
             </section>
             <section className="overflow-x-auto">
-                {/* <table className="w-full table-auto text-sm text-right border-separate border-spacing-y-2"> */}
                 <table className="w-full text-sm text-right 
                     border-[3px]  border-[#f3f2f1] rounded-lg">
                     <thead >
@@ -82,11 +81,11 @@ export const Members = () => {
                             </svg>
                             <span>السابق</span>
                         </a>
-                        <a className="aegov-pagination-page aegov-pagination-smaller" title="Page 1" href="#">1</a>
+                        <a className="aegov-pagination-page aegov-pagination-smaller xs:hidden" title="Page 1" href="#">1</a>
                         <a className="aegov-pagination-page aegov-pagination-smaller" title="Page 2" href="#">2</a>
                         <span aria-current="page" className="aegov-pagination-current">3</span>
                         <a className="aegov-pagination-page aegov-pagination-larger" title="Page 4" href="#">4</a>
-                        <a className="aegov-pagination-page aegov-pagination-larger" title="Page 5" href="#">5</a>
+                        <a className="aegov-pagination-page aegov-pagination-larger xs:hidden" title="Page 5" href="#">5</a>
                         <span className="aegov-pagination-extend">...</span>
                         <a className="aegov-pagination-page aegov-pagination-larger" title="Page 17" href="#">17</a>
                         <a className="aegov-pagination-next" rel="next" aria-label="Next Page" href="#">

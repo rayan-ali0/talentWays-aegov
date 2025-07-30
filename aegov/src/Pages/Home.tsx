@@ -66,19 +66,18 @@ export const Home = () => {
             <section className="rounded-md w-full h-[100px] border border-aegold-500 overflow-hidden">
                 <NavBar />
             </section>
-            
+
             <section className={`flex justify-between gap-7 flex-col lg:flex-row`}>
-                {/* <div className="w-[23%]"> */}
                 <div className={` w-full h-10 lg:h-auto lg:w-[23%]`}>
 
                     <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
                 </div>
                 <div className={`lg:w-[75%] w-full flex justify-between  gap-12 flex-col `}>
-                    {/* <FileInfo />
+                    <FileInfo />
                     <AdminResp />
-                    <Members /> */}
-                    <Party12 mockData={mockDataa} openSide={setSelectedRow} partT="first" />
-                    <Party12 mockData={mockDataa} openSide={setSelectedRow} partT="second" />
+                    <Members />
+                    {/* <Party12 mockData={mockDataa} openSide={setSelectedRow} partT="first" />
+                    <Party12 mockData={mockDataa} openSide={setSelectedRow} partT="second" /> */}
 
                 </div>
             </section>

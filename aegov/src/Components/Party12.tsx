@@ -56,7 +56,6 @@ export const Party12 = ({ mockData, openSide, partT }: Party12Props) => {
 
             </section>
             <section className="overflow-hidden">
-                {/* <table className="w-full table-auto text-sm text-right border-separate border-spacing-y-2"> */}
                 <div className="rounded-lg overflow-x-auto ">
 
                     <table className="w-full text-sm text-right 
@@ -84,8 +83,8 @@ export const Party12 = ({ mockData, openSide, partT }: Party12Props) => {
                     </table>
                 </div>
             </section>
-            <section className="flex justify-en">
-                <div className="flex items-center justify-center w-full md:w-auto">
+            <section className="flex justify-end">
+                <div className="flex items-center justify-center w-full md:w-auto ">
                     <div className="aegov-pagination " role="navigation">
                         <a className="aegov-pagination-previous" rel="prev" aria-label="Previous Page" href="#">
                             <svg aria-hidden="true" className="rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
@@ -95,11 +94,11 @@ export const Party12 = ({ mockData, openSide, partT }: Party12Props) => {
                             </svg>
                             <span>السابق</span>
                         </a>
-                        <a className="aegov-pagination-page aegov-pagination-smaller" title="Page 1" href="#">1</a>
+                        <a className="aegov-pagination-page aegov-pagination-smaller xs:hidden" title="Page 1" href="#">1</a>
                         <a className="aegov-pagination-page aegov-pagination-smaller" title="Page 2" href="#">2</a>
                         <span aria-current="page" className="aegov-pagination-current">3</span>
                         <a className="aegov-pagination-page aegov-pagination-larger" title="Page 4" href="#">4</a>
-                        <a className="aegov-pagination-page aegov-pagination-larger" title="Page 5" href="#">5</a>
+                        <a className="aegov-pagination-page aegov-pagination-larger xs:hidden" title="Page 5" href="#">5</a>
                         <span className="aegov-pagination-extend">...</span>
                         <a className="aegov-pagination-page aegov-pagination-larger" title="Page 17" href="#">17</a>
                         <a className="aegov-pagination-next" rel="next" aria-label="Next Page" href="#">
@@ -112,7 +111,6 @@ export const Party12 = ({ mockData, openSide, partT }: Party12Props) => {
                         </a>
                     </div>
                 </div>
-
             </section>
 
         </main>
