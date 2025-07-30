@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-   future: {
+  future: {
     hoverOnlyWhenSupported: false,
   },
   theme: {
@@ -13,7 +13,9 @@ export default {
   plugins: [
     require('@aegov/design-system'),
     require('@tailwindcss/typography'),
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
+    require('tailwind-scrollbar'),
+
   ],
 }
 

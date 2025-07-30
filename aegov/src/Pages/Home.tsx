@@ -33,7 +33,8 @@ const mockDataa = [
 
 export const Home = () => {
     const [selectedRow, setSelectedRow] = useState(false)
-    console.log(selectedRow)
+    const [isOpen, setIsOpen] = useState(false);
+
 
 
     return (
@@ -60,20 +61,22 @@ export const Home = () => {
                 )}
             </AnimatePresence>
 
-            <h1 className="text-xl sm:text-5xl border sm:border-aegold-400">ملف التنفيذ</h1>
+            <h1 className="text-[38px] sm:text-[50px]">ملف التنفيذ</h1>
             <section className="rounded-md w-full h-[100px] border border-aegold-500 overflow-hidden">
                 <NavBar />
             </section>
-            <section className="flex flex-row justify-between gap-7">
-                <div className="w-[23%] ">
-                    <SideBar />
+            <section className={`flex justify-between gap-7 flex-col lg:flex-row`}>
+                {/* <div className="w-[23%]"> */}
+                <div className={` w-full h-10 lg:h-auto lg:w-[23%]`}>
+
+                    <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
                 </div>
-                <div className="w-[75%] flex justify-between  gap-12 flex-col ">
+                <div className={`lg:w-[75%] w-full flex justify-between  gap-12 flex-col `}>
                     {/* <FileInfo />
                     <AdminResp />
                     <Members /> */}
-                    <Party12 mockData={mockDataa} openSide={setSelectedRow} partT="first"/>
-                    <Party12 mockData={mockDataa} openSide={setSelectedRow} partT="second"/>
+                    <Party12 mockData={mockDataa} openSide={setSelectedRow} partT="first" />
+                    <Party12 mockData={mockDataa} openSide={setSelectedRow} partT="second" />
 
                 </div>
             </section>

@@ -1,15 +1,32 @@
 import { useState } from "react"
 import { FiInfo } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
+import Hamburger from 'hamburger-react'
 
-export const SideBar = () => {
+type sideBarProps={
+    isOpen:boolean,
+    setIsOpen:React.Dispatch<React.SetStateAction<boolean>>
+}
+export const SideBar = ({isOpen,setIsOpen}:sideBarProps) => {
     const [activeElt, setActiveElt] = useState("")
+    // const [isOpen, setIsOpen] = useState(false)
+
     console.log("activeElt =", activeElt);
 
     return (
-        <main>
-            <div className="aegov-tab tab-pills">
-                <ul className="tab-items gap-4 md:gap-6 lg:gap-7 xl:gap-8 max-xl:overflow-auto
-                flex flex-col items-center " data-tabs-toggle="#SampleLayout-Tabs-07" role="tablist">
+        <main className=" h-[600px] overflow-hidden">
+            <div className="aegov-tab tab-pills h-full ">
+                <div className="block lg:hidden">
+                    <Hamburger toggled={isOpen} toggle={setIsOpen} color="#B68A35" />
+                </div>
+                <ul className="hidden 
+                tab-items gap-4 md:gap-6 lg:gap-7 xl:gap-8 max-xl:overflow-auto
+                lg:flex flex-col items-center h-full overflow-y-auto
+             scrollbar-thin
+               scrollbar-thumb-aegold-400
+  scrollbar-track-aegold-200
+  scrollbar-thumb-rounded
+  scrollbar-track-rounded" data-tabs-toggle="#SampleLayout-Tabs-07" role="tablist">
 
                     {/* <ul className="tab-items gap-4 md:gap-6 lg:gap-7 xl:gap-8 max-xl:overflow-auto" data-tabs-toggle="#SampleLayout-Tabs-07" role="tablist"> */}
                     <li role="presentation" className="w-11/12  flex flex-row justify-start items-center">
@@ -69,6 +86,22 @@ export const SideBar = () => {
                             الإشعارات
                         </span>
                     </li>
+
+
+                    <li role="presentation" className="w-11/12  flex flex-row justify-start items-center">
+                        <span onClick={() => setActiveElt("tab8")} className={`gap-3 h-10 lg:h-12 px-4 lg:px-6 w-full flex justify-start items-center rounded-lg  ${activeElt === "tab8" ? "bg-aegold-200 text-aegold-400" : "hover:bg-slate-50"}`}>
+                            <FiInfo size={25} />
+                            الإشعارات
+                        </span>
+                    </li>
+
+                    <li role="presentation" className="w-11/12  flex flex-row justify-start items-center">
+                        <span onClick={() => setActiveElt("tab8")} className={`gap-3 h-10 lg:h-12 px-4 lg:px-6 w-full flex justify-start items-center rounded-lg  ${activeElt === "tab8" ? "bg-aegold-200 text-aegold-400" : "hover:bg-slate-50"}`}>
+                            <FiInfo size={25} />
+                            الإشعارات
+                        </span>
+                    </li>
+
 
 
 
