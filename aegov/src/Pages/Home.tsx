@@ -62,9 +62,11 @@ export const Home = () => {
             </AnimatePresence>
 
             <h1 className="text-[38px] sm:text-[50px]">ملف التنفيذ</h1>
+
             <section className="rounded-md w-full h-[100px] border border-aegold-500 overflow-hidden">
                 <NavBar />
             </section>
+            
             <section className={`flex justify-between gap-7 flex-col lg:flex-row`}>
                 {/* <div className="w-[23%]"> */}
                 <div className={` w-full h-10 lg:h-auto lg:w-[23%]`}>

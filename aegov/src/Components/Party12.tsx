@@ -84,9 +84,9 @@ export const Party12 = ({ mockData, openSide, partT }: Party12Props) => {
                     </table>
                 </div>
             </section>
-            <section className="flex justify-end">
-                <div className="flex items-center justify-center">
-                    <div className="aegov-pagination max-sm:hidden" role="navigation">
+            <section className="flex justify-en">
+                <div className="flex items-center justify-center w-full md:w-auto">
+                    <div className="aegov-pagination " role="navigation">
                         <a className="aegov-pagination-previous" rel="prev" aria-label="Previous Page" href="#">
                             <svg aria-hidden="true" className="rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                                 <rect width="256" height="256" fill="none" />

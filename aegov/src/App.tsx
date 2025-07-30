@@ -4,7 +4,7 @@ import './tailwand.css'
 function App() {
 
   return (
-    <main className='p-10 '>
+    <main className='p-5 sm:p-10 '>
       <Home/>
     </main>
   )
